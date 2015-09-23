@@ -1,0 +1,17 @@
+site_name: Toiminnalliset ohjeet
+pages:
+- 'Yleistä':
+  - 'Yleistä': 'index.md'
+  - 'Dokumentoinnin ohjeet': 'ohjeet.md'
+- 'Navigointi': 'navigointi.md'
+- 'Tietojen esitys ja muokkaus':
+  - 'Tietojen esitys': 'tietojennayttaminen.md'
+  - 'Tietojen muokkaus': 'tietojenmuokkaus.md'
+- 'Toiminnalliset komponentit': 'toiminnalliset.md'
+- 'Ilmoitukset': 'ilmoitukset.md'
+theme: bootstrap
+theme_dir: custom_theme
+extra_css: [custom.css]
+use_directory_urls: false
+repo_name: 'Github'
+repo_url: https://github.com/chilpura/vantaa-mk-docs/

@@ -1,0 +1,29 @@
+.navbar {
+ 
+}
+
+/*
+.navbar-brand {
+  background-image: url(img/Symbol-FIN.svg);
+	background-size: 60px;
+	background-repeat: no-repeat;
+	background-position: 0;
+	width:160px;
+	padding-left: 60px;
+	font-weight: bold;
+}
+*/
+
+footer {
+  background-color:#F9E51E;	
+}
+
+footer hr {
+	visibility:hidden;
+}
+
+.vantaa-logo {
+	width: 140px;
+	height: 140px;
+}
+
