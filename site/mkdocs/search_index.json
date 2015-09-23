@@ -1,0 +1,259 @@
+{
+    "docs": [
+        {
+            "location": "/index.html",
+            "text": "Vantaan s\u00e4hk\u00f6isten palveluiden toiminnalliset suunnitteluohjeet\n\n\nVerkkopalveluiden suunnittelijat pit\u00e4v\u00e4t yll\u00e4 t\u00e4t\u00e4 dokumenttikokoelmaa johon kirjataan suunnittelu ja toteutusperiaatteita palveluiden suunnittelua varten.\n\n\nT\u00e4m\u00e4n oppaan ulkopuolelle on j\u00e4tetty HTML/CSS koodin dokumentointi, sek\u00e4 yksitt\u00e4isten palveluiden suunnitteludokumentit.  \n\n\nT\u00e4t\u00e4 verkkosivua p\u00e4ivitet\u00e4\u00e4n koko ajan. \n\n\nSis\u00e4lt\u00f6\n\n\n\n\nYleist\u00e4\n\n\nLaite ja selainm\u00e4\u00e4ritykset\n\n\nHTML, CSS ja Javascript/jQuery\n\n\nEsteett\u00f6myys\n\n\nTulostusversio\n\n\nSivujen rakenne ja sis\u00e4ll\u00f6n asemointi\n\n\nMobiilisuunnittelu\n\n\n\n\n\n\nNavigointi\n\n\nP\u00e4\u00e4navigaatio\n\n\nAlanavigaatio\n\n\nMurupolku\n\n\nSivujen v\u00e4lill\u00e4 liikkuminen \n\n\n\n\n\n\nTietojen n\u00e4ytt\u00e4minen\n\n\nTietojen n\u00e4ytt\u00e4minen\n\n\nTeksti\n\n\nKuvat, ikonit ja videot \n\n\nLomakkeet\n\n\nLomakekomponentit\n\n\n\n\n\n\nKieliversiot\n\n\nTerminologia\n\n\nLyhenteet\n\n\nNimet\n\n\nNumeerinen tieto\n\n\nYhteystiedot\n\n\nJ\u00e4rjestys ja ryhmittely\n\n\nTaulukot ja listat\n\n\nDiagrammit ja kaaviot\n\n\nKartat\n\n\n\n\n\n\nTietojen lis\u00e4\u00e4minen, muokkaaminen ja poistaminen\n\n\nTietojen lis\u00e4\u00e4minen\n\n\nTietojen muokkaaminen\n\n\nTietojen poistaminen\n\n\n\n\n\n\nToiminnalliset komponentit\n\n\nLinkit\n\n\nPainikkeet\n\n\nV\u00e4lilehdet\n\n\nSivutus\n\n\nWizardi\n\n\nDialogit\n\n\nKalenteri\n\n\n\n\n\n\nIlmoitukset\n\n\nNeutraali\n\n\nPositiivinen palaute\n\n\nVirheilmoitus\n\n\nK\u00e4ynniss\u00e4 oleva toiminto\n\n\nJ\u00e4rjestelm\u00e4n tilailmoitus\n\n\n\n\n\n\n\n\nYleist\u00e4\n\n\nLaite ja selainm\u00e4\u00e4ritykset\n\n\nHTML, CSS ja Javascript/jQuery\n\n\nEsteett\u00f6myys\n\n\nTulostusversio\n\n\nSivujen rakenne ja sis\u00e4ll\u00f6n asemointi\n\n\nMobiilisuunnittelu\n\n\n{Huom MK: t\u00e4m\u00e4 kappale vaatii editointia}\n\n\nK: pyrit\u00e4\u00e4nk\u00f6 suunnittelussa siihen, ett\u00e4 samat n\u00e4kym\u00e4t toimivat sellaisenaan mobiilissa, vai tehd\u00e4\u00e4nk\u00f6 mobiiliin erillist\u00e4 suunnittelua\n\n\nV: Ensisijaisesti tehd\u00e4\u00e4n ratkaisuja, jotka toimivat kaikilla laitetyypeill\u00e4. K\u00e4ytet\u00e4\u00e4n oletuksena Bootstrap 3:n elementtien k\u00e4ytt\u00e4ytymismalleja. Mik\u00e4li tietty\u00e4 laitetyyppi\u00e4 varten tarvitaan poikkeus ulkoasuun tai toiminnallisuuteen, lis\u00e4t\u00e4\u00e4n p\u00e4\u00e4lle uusi taso, joka sis\u00e4lt\u00e4\u00e4 vain tarvittavan poikkeuksen.\n\n\nK: mik\u00e4li tehd\u00e4\u00e4n erillist\u00e4 suunnittelua, miten se priorisoidaan suhteessa muihin teht\u00e4viin?\n\n\nV: Suunnitellaan Mobile First, jolloin suurin osa asioista ratkeaa suoraan suunnitteluvaiheessa. Ei optimoida alussa liian pitk\u00e4lle, vaan toteutetaan ensin ensimm\u00e4inen versio ja mik\u00e4li lis\u00e4optimoinnin tarvetta esiintyy, niist\u00e4 tehd\u00e4\u00e4n omat taskit backlogille.\n\n\nK: mink\u00e4 tyyppisiin asioihin suunnittelu kohdistuu? \n\n\nV: Suunnittelu kohdistuu tarpeen mukaan. Yleens\u00e4 vaatimus tulee tilank\u00e4yt\u00f6n ja n\u00e4yt\u00f6n pienuuden kautta. (Esim. pitkien listojen muuttaminen dropdowneiksi tms)\n\n\nK: voidaanko esimerkiksi sis\u00e4lt\u00f6\u00e4 karsia ja miss\u00e4 tapauksissa?\n\n\nV: Sis\u00e4lt\u00f6\u00e4 karsitaan vain \u00e4\u00e4rimm\u00e4isess\u00e4 poikkeustapauksessa ja n\u00e4m\u00e4 tapaukset k\u00e4sitell\u00e4\u00e4n erikseen. Sis\u00e4lt\u00f6\u00e4 voidaan kuitenkin esitt\u00e4\u00e4 pienemmiss\u00e4 eriss\u00e4 k\u00e4ytt\u00e4j\u00e4lle, ts. n\u00e4yt\u00f6n tilan rajoissa. T\u00e4m\u00e4n vuoksi sis\u00e4ll\u00f6n priorisointi on t\u00e4rke\u00e4\u00e4 jo sis\u00e4lt\u00f6\u00e4 suunniteltaessa.",
+            "title": "Yleist\u00e4"
+        },
+        {
+            "location": "/index.html#vantaan-sahkoisten-palveluiden-toiminnalliset-suunnitteluohjeet",
+            "text": "Verkkopalveluiden suunnittelijat pit\u00e4v\u00e4t yll\u00e4 t\u00e4t\u00e4 dokumenttikokoelmaa johon kirjataan suunnittelu ja toteutusperiaatteita palveluiden suunnittelua varten.  T\u00e4m\u00e4n oppaan ulkopuolelle on j\u00e4tetty HTML/CSS koodin dokumentointi, sek\u00e4 yksitt\u00e4isten palveluiden suunnitteludokumentit.    T\u00e4t\u00e4 verkkosivua p\u00e4ivitet\u00e4\u00e4n koko ajan.",
+            "title": "Vantaan s\u00e4hk\u00f6isten palveluiden toiminnalliset suunnitteluohjeet"
+        },
+        {
+            "location": "/index.html#sisalto",
+            "text": "Yleist\u00e4  Laite ja selainm\u00e4\u00e4ritykset  HTML, CSS ja Javascript/jQuery  Esteett\u00f6myys  Tulostusversio  Sivujen rakenne ja sis\u00e4ll\u00f6n asemointi  Mobiilisuunnittelu    Navigointi  P\u00e4\u00e4navigaatio  Alanavigaatio  Murupolku  Sivujen v\u00e4lill\u00e4 liikkuminen     Tietojen n\u00e4ytt\u00e4minen  Tietojen n\u00e4ytt\u00e4minen  Teksti  Kuvat, ikonit ja videot   Lomakkeet  Lomakekomponentit    Kieliversiot  Terminologia  Lyhenteet  Nimet  Numeerinen tieto  Yhteystiedot  J\u00e4rjestys ja ryhmittely  Taulukot ja listat  Diagrammit ja kaaviot  Kartat    Tietojen lis\u00e4\u00e4minen, muokkaaminen ja poistaminen  Tietojen lis\u00e4\u00e4minen  Tietojen muokkaaminen  Tietojen poistaminen    Toiminnalliset komponentit  Linkit  Painikkeet  V\u00e4lilehdet  Sivutus  Wizardi  Dialogit  Kalenteri    Ilmoitukset  Neutraali  Positiivinen palaute  Virheilmoitus  K\u00e4ynniss\u00e4 oleva toiminto  J\u00e4rjestelm\u00e4n tilailmoitus",
+            "title": "Sis\u00e4lt\u00f6"
+        },
+        {
+            "location": "/index.html#yleista",
+            "text": "",
+            "title": "Yleist\u00e4"
+        },
+        {
+            "location": "/index.html#laite-ja-selainmaaritykset",
+            "text": "",
+            "title": "Laite ja selainm\u00e4\u00e4ritykset"
+        },
+        {
+            "location": "/index.html#html-css-ja-javascriptjquery",
+            "text": "",
+            "title": "HTML, CSS ja Javascript/jQuery"
+        },
+        {
+            "location": "/index.html#esteettomyys",
+            "text": "",
+            "title": "Esteett\u00f6myys"
+        },
+        {
+            "location": "/index.html#tulostusversio",
+            "text": "",
+            "title": "Tulostusversio"
+        },
+        {
+            "location": "/index.html#sivujen-rakenne-ja-sisallon-asemointi",
+            "text": "",
+            "title": "Sivujen rakenne ja sis\u00e4ll\u00f6n asemointi"
+        },
+        {
+            "location": "/index.html#mobiilisuunnittelu",
+            "text": "{Huom MK: t\u00e4m\u00e4 kappale vaatii editointia}  K: pyrit\u00e4\u00e4nk\u00f6 suunnittelussa siihen, ett\u00e4 samat n\u00e4kym\u00e4t toimivat sellaisenaan mobiilissa, vai tehd\u00e4\u00e4nk\u00f6 mobiiliin erillist\u00e4 suunnittelua  V: Ensisijaisesti tehd\u00e4\u00e4n ratkaisuja, jotka toimivat kaikilla laitetyypeill\u00e4. K\u00e4ytet\u00e4\u00e4n oletuksena Bootstrap 3:n elementtien k\u00e4ytt\u00e4ytymismalleja. Mik\u00e4li tietty\u00e4 laitetyyppi\u00e4 varten tarvitaan poikkeus ulkoasuun tai toiminnallisuuteen, lis\u00e4t\u00e4\u00e4n p\u00e4\u00e4lle uusi taso, joka sis\u00e4lt\u00e4\u00e4 vain tarvittavan poikkeuksen.  K: mik\u00e4li tehd\u00e4\u00e4n erillist\u00e4 suunnittelua, miten se priorisoidaan suhteessa muihin teht\u00e4viin?  V: Suunnitellaan Mobile First, jolloin suurin osa asioista ratkeaa suoraan suunnitteluvaiheessa. Ei optimoida alussa liian pitk\u00e4lle, vaan toteutetaan ensin ensimm\u00e4inen versio ja mik\u00e4li lis\u00e4optimoinnin tarvetta esiintyy, niist\u00e4 tehd\u00e4\u00e4n omat taskit backlogille.  K: mink\u00e4 tyyppisiin asioihin suunnittelu kohdistuu?   V: Suunnittelu kohdistuu tarpeen mukaan. Yleens\u00e4 vaatimus tulee tilank\u00e4yt\u00f6n ja n\u00e4yt\u00f6n pienuuden kautta. (Esim. pitkien listojen muuttaminen dropdowneiksi tms)  K: voidaanko esimerkiksi sis\u00e4lt\u00f6\u00e4 karsia ja miss\u00e4 tapauksissa?  V: Sis\u00e4lt\u00f6\u00e4 karsitaan vain \u00e4\u00e4rimm\u00e4isess\u00e4 poikkeustapauksessa ja n\u00e4m\u00e4 tapaukset k\u00e4sitell\u00e4\u00e4n erikseen. Sis\u00e4lt\u00f6\u00e4 voidaan kuitenkin esitt\u00e4\u00e4 pienemmiss\u00e4 eriss\u00e4 k\u00e4ytt\u00e4j\u00e4lle, ts. n\u00e4yt\u00f6n tilan rajoissa. T\u00e4m\u00e4n vuoksi sis\u00e4ll\u00f6n priorisointi on t\u00e4rke\u00e4\u00e4 jo sis\u00e4lt\u00f6\u00e4 suunniteltaessa.",
+            "title": "Mobiilisuunnittelu"
+        },
+        {
+            "location": "/ohjeet/index.html",
+            "text": "Dokumenttien yll\u00e4pito\n\n\nTekstin muokkaus\n\n\nTekstin kirjoittamisessa k\u00e4ytet\u00e4\u00e4n Markdown syntaksia. Markdown teksti muunnetaan html muotoiseksi dokumentiksi Mkdocs alustan toimesta.  \n\n\n# T\u00e4m\u00e4 on H1 tason otsikko\n## T\u00e4m\u00e4 on H2 tason otsikko\n### T\u00e4m\u00e4 on H3 tason otsikko\n#### T\u00e4m\u00e4 on H4 tason otsikko\n##### T\u00e4m\u00e4 on H5 tason otsikko        \n###### T\u00e4m\u00e4 on H6 tason otsikko\n\n\n\nT\u00e4m\u00e4 on H1 tason otsikko\n\n\nT\u00e4m\u00e4 on H2 tason otsikko\n\n\nT\u00e4m\u00e4 on H3 tason otsikko\n\n\nT\u00e4m\u00e4 on H4 tason otsikko\n\n\nT\u00e4m\u00e4 on H5 tason otsikko\n\n\nT\u00e4m\u00e4 on H6 tason otsikko\n\n\n*Kursiivia* \n_Kursiivia_\n**Lihavoitua**\n__Lihavoitua__\n\n\n\nKursiivia\n\n\nKursiivia\n\n\nLihavoitua\n\n\nLihavoitua\n\n\n\n\nMkdocs dokumentaatio: \nmkdocs.org\n.",
+            "title": "Dokumentoinnin ohjeet"
+        },
+        {
+            "location": "/ohjeet/index.html#dokumenttien-yllapito",
+            "text": "",
+            "title": "Dokumenttien yll\u00e4pito"
+        },
+        {
+            "location": "/ohjeet/index.html#tekstin-muokkaus",
+            "text": "Tekstin kirjoittamisessa k\u00e4ytet\u00e4\u00e4n Markdown syntaksia. Markdown teksti muunnetaan html muotoiseksi dokumentiksi Mkdocs alustan toimesta.    # T\u00e4m\u00e4 on H1 tason otsikko\n## T\u00e4m\u00e4 on H2 tason otsikko\n### T\u00e4m\u00e4 on H3 tason otsikko\n#### T\u00e4m\u00e4 on H4 tason otsikko\n##### T\u00e4m\u00e4 on H5 tason otsikko        \n###### T\u00e4m\u00e4 on H6 tason otsikko",
+            "title": "Tekstin muokkaus"
+        },
+        {
+            "location": "/ohjeet/index.html#tama-on-h1-tason-otsikko",
+            "text": "",
+            "title": "T\u00e4m\u00e4 on H1 tason otsikko"
+        },
+        {
+            "location": "/ohjeet/index.html#tama-on-h2-tason-otsikko",
+            "text": "T\u00e4m\u00e4 on H3 tason otsikko  T\u00e4m\u00e4 on H4 tason otsikko  T\u00e4m\u00e4 on H5 tason otsikko  T\u00e4m\u00e4 on H6 tason otsikko  *Kursiivia* \n_Kursiivia_\n**Lihavoitua**\n__Lihavoitua__  Kursiivia  Kursiivia  Lihavoitua  Lihavoitua",
+            "title": "T\u00e4m\u00e4 on H2 tason otsikko"
+        },
+        {
+            "location": "/navigointi/index.html",
+            "text": "Navigointi\n\n\nP\u00e4\u00e4navigaatio\n\n\nAlanavigaatio\n\n\nSivujen v\u00e4lill\u00e4 liikkuminen",
+            "title": "Navigointi"
+        },
+        {
+            "location": "/navigointi/index.html#navigointi",
+            "text": "",
+            "title": "Navigointi"
+        },
+        {
+            "location": "/navigointi/index.html#paanavigaatio",
+            "text": "",
+            "title": "P\u00e4\u00e4navigaatio"
+        },
+        {
+            "location": "/navigointi/index.html#alanavigaatio",
+            "text": "",
+            "title": "Alanavigaatio"
+        },
+        {
+            "location": "/navigointi/index.html#sivujen-valilla-liikkuminen",
+            "text": "",
+            "title": "Sivujen v\u00e4lill\u00e4 liikkuminen"
+        },
+        {
+            "location": "/tietojennayttaminen/index.html",
+            "text": "Tietojen n\u00e4ytt\u00e4minen\n\n\nTeksti ja kuvat\n\n\nKieliversiot\n\n\nTerminologia\n\n\nLyhenteet\n\n\nNimet\n\n\nNumeerinen tieto\n\n\nYhteystiedot\n\n\nJ\u00e4rjestys ja ryhmittely\n\n\nTaulukot ja listat",
+            "title": "Tietojen esitys"
+        },
+        {
+            "location": "/tietojennayttaminen/index.html#tietojen-nayttaminen",
+            "text": "",
+            "title": "Tietojen n\u00e4ytt\u00e4minen"
+        },
+        {
+            "location": "/tietojennayttaminen/index.html#teksti-ja-kuvat",
+            "text": "",
+            "title": "Teksti ja kuvat"
+        },
+        {
+            "location": "/tietojennayttaminen/index.html#kieliversiot",
+            "text": "",
+            "title": "Kieliversiot"
+        },
+        {
+            "location": "/tietojennayttaminen/index.html#terminologia",
+            "text": "",
+            "title": "Terminologia"
+        },
+        {
+            "location": "/tietojennayttaminen/index.html#lyhenteet",
+            "text": "",
+            "title": "Lyhenteet"
+        },
+        {
+            "location": "/tietojennayttaminen/index.html#nimet",
+            "text": "",
+            "title": "Nimet"
+        },
+        {
+            "location": "/tietojennayttaminen/index.html#numeerinen-tieto",
+            "text": "",
+            "title": "Numeerinen tieto"
+        },
+        {
+            "location": "/tietojennayttaminen/index.html#yhteystiedot",
+            "text": "",
+            "title": "Yhteystiedot"
+        },
+        {
+            "location": "/tietojennayttaminen/index.html#jarjestys-ja-ryhmittely",
+            "text": "",
+            "title": "J\u00e4rjestys ja ryhmittely"
+        },
+        {
+            "location": "/tietojennayttaminen/index.html#taulukot-ja-listat",
+            "text": "",
+            "title": "Taulukot ja listat"
+        },
+        {
+            "location": "/tietojenmuokkaus/index.html",
+            "text": "Tietojen lis\u00e4\u00e4minen, muokkaaminen ja poistaminen\n\n\nTietojen lis\u00e4\u00e4minen\n\n\nTietojen muokkaaminen\n\n\nTietojen poistaminen",
+            "title": "Tietojen muokkaus"
+        },
+        {
+            "location": "/tietojenmuokkaus/index.html#tietojen-lisaaminen-muokkaaminen-ja-poistaminen",
+            "text": "",
+            "title": "Tietojen lis\u00e4\u00e4minen, muokkaaminen ja poistaminen"
+        },
+        {
+            "location": "/tietojenmuokkaus/index.html#tietojen-lisaaminen",
+            "text": "",
+            "title": "Tietojen lis\u00e4\u00e4minen"
+        },
+        {
+            "location": "/tietojenmuokkaus/index.html#tietojen-muokkaaminen",
+            "text": "",
+            "title": "Tietojen muokkaaminen"
+        },
+        {
+            "location": "/tietojenmuokkaus/index.html#tietojen-poistaminen",
+            "text": "",
+            "title": "Tietojen poistaminen"
+        },
+        {
+            "location": "/toiminnalliset/index.html",
+            "text": "Toiminnalliset komponentit\n\n\nLinkit\n\n\nPainikkeet\n\n\nV\u00e4lilehdet\n\n\nSivutus\n\n\nWizardi\n\n\nDialogit",
+            "title": "Toiminnalliset komponentit"
+        },
+        {
+            "location": "/toiminnalliset/index.html#toiminnalliset-komponentit",
+            "text": "",
+            "title": "Toiminnalliset komponentit"
+        },
+        {
+            "location": "/toiminnalliset/index.html#linkit",
+            "text": "",
+            "title": "Linkit"
+        },
+        {
+            "location": "/toiminnalliset/index.html#painikkeet",
+            "text": "",
+            "title": "Painikkeet"
+        },
+        {
+            "location": "/toiminnalliset/index.html#valilehdet",
+            "text": "",
+            "title": "V\u00e4lilehdet"
+        },
+        {
+            "location": "/toiminnalliset/index.html#sivutus",
+            "text": "",
+            "title": "Sivutus"
+        },
+        {
+            "location": "/toiminnalliset/index.html#wizardi",
+            "text": "",
+            "title": "Wizardi"
+        },
+        {
+            "location": "/toiminnalliset/index.html#dialogit",
+            "text": "",
+            "title": "Dialogit"
+        },
+        {
+            "location": "/ilmoitukset/index.html",
+            "text": "Ilmoitukset\n\n\nNeutraali\n\n\nPositiivinen palaute\n\n\nVirheilmoitus\n\n\nK\u00e4ynniss\u00e4oleva toiminto\n\n\nJ\u00e4rjestelm\u00e4n tilailmoitus",
+            "title": "Ilmoitukset"
+        },
+        {
+            "location": "/ilmoitukset/index.html#ilmoitukset",
+            "text": "",
+            "title": "Ilmoitukset"
+        },
+        {
+            "location": "/ilmoitukset/index.html#neutraali",
+            "text": "",
+            "title": "Neutraali"
+        },
+        {
+            "location": "/ilmoitukset/index.html#positiivinen-palaute",
+            "text": "",
+            "title": "Positiivinen palaute"
+        },
+        {
+            "location": "/ilmoitukset/index.html#virheilmoitus",
+            "text": "",
+            "title": "Virheilmoitus"
+        },
+        {
+            "location": "/ilmoitukset/index.html#kaynnissaoleva-toiminto",
+            "text": "",
+            "title": "K\u00e4ynniss\u00e4oleva toiminto"
+        },
+        {
+            "location": "/ilmoitukset/index.html#jarjestelman-tilailmoitus",
+            "text": "",
+            "title": "J\u00e4rjestelm\u00e4n tilailmoitus"
+        }
+    ]
+}
