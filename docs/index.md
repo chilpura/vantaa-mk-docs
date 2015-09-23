@@ -61,7 +61,7 @@ Tätä verkkosivua päivitetään koko ajan.
 ## Tulostusversio
 ## Sivujen rakenne ja sisällön asemointi
 ## Mobiilisuunnittelu
-{Huom MK: tämä kappale vaatii editointia}
+_Huom MK: tämä kappale vaatii editointia_
 
 K: pyritäänkö suunnittelussa siihen, että samat näkymät toimivat sellaisenaan mobiilissa, vai tehdäänkö mobiiliin erillistä suunnittelua
 
